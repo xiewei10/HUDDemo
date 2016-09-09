@@ -15,6 +15,7 @@
 		5DF850FF1D82A76900CD5D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF850FD1D82A76900CD5D37 /* LaunchScreen.storyboard */; };
 		5DF8510A1D82A76900CD5D37 /* HUDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF851091D82A76900CD5D37 /* HUDDemoTests.m */; };
 		5DF851151D82A76900CD5D37 /* HUDDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF851141D82A76900CD5D37 /* HUDDemoUITests.m */; };
+		5DF851251D82A79400CD5D37 /* XWHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF851241D82A79400CD5D37 /* XWHud.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5DF851101D82A76900CD5D37 /* HUDDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUDDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF851141D82A76900CD5D37 /* HUDDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDDemoUITests.m; sourceTree = "<group>"; };
 		5DF851161D82A76900CD5D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF851231D82A79400CD5D37 /* XWHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWHud.h; sourceTree = "<group>"; };
+		5DF851241D82A79400CD5D37 /* XWHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWHud.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		5DF850EE1D82A76900CD5D37 /* HUDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5DF851221D82A77600CD5D37 /* Hud */,
 				5DF850F21D82A76900CD5D37 /* AppDelegate.h */,
 				5DF850F31D82A76900CD5D37 /* AppDelegate.m */,
 				5DF850F51D82A76900CD5D37 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				5DF851161D82A76900CD5D37 /* Info.plist */,
 			);
 			path = HUDDemoUITests;
+			sourceTree = "<group>";
+		};
+		5DF851221D82A77600CD5D37 /* Hud */ = {
+			isa = PBXGroup;
+			children = (
+				5DF851231D82A79400CD5D37 /* XWHud.h */,
+				5DF851241D82A79400CD5D37 /* XWHud.m */,
+			);
+			name = Hud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				5DF850F71D82A76900CD5D37 /* ViewController.m in Sources */,
 				5DF850F41D82A76900CD5D37 /* AppDelegate.m in Sources */,
+				5DF851251D82A79400CD5D37 /* XWHud.m in Sources */,
 				5DF850F11D82A76900CD5D37 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +512,7 @@
 				5DF8511B1D82A76900CD5D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DF8511C1D82A76900CD5D37 /* Build configuration list for PBXNativeTarget "HUDDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +521,7 @@
 				5DF8511E1D82A76900CD5D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DF8511F1D82A76900CD5D37 /* Build configuration list for PBXNativeTarget "HUDDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +530,7 @@
 				5DF851211D82A76900CD5D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
